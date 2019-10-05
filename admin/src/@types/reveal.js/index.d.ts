@@ -783,8 +783,14 @@ declare namespace Reveal {
      * @default []
      */
     dependencies?: IRevealDependency[];
+
+    /** https://github.com/hakimel/reveal.js/#multiplexing */
+    multiplex?: MultiplexConfig;
+
+    /** https://github.com/hakimel/reveal.js/#mathjax */
+    math?: MathConfig;
   }
-  
+
   /**
    * Reveal.js doesn't rely on any third party scripts to work but a few optional libraries are included by default.
    * libraries are loaded as dependencies in the order they appear.
@@ -807,5 +813,23 @@ declare namespace Reveal {
     indexf?: number;
     paused?: boolean;
     overview?: boolean;
+  }
+
+  /** https://github.com/hakimel/reveal.js/#multiplexing */
+  interface MultiplexConfig {
+    /** Obtained from the socket.io server. Gives this (the master) control of the presentation */
+    secret?: string;
+    /** Obtained from the socket.io server */
+    id: string;
+    /** Location of socket.io server */
+    url: string;
+  }
+
+  /** https://github.com/hakimel/reveal.js/#mathjax */
+  interface MathConfig {
+    /** Obtained from the socket.io server. Gives this (the master) control of the presentation */
+    mathjax: string;
+    /** Obtained from the socket.io server */
+    config: string;
   }
 }
