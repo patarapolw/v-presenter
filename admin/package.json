@@ -11,7 +11,7 @@
     "@types/codemirror": "0.0.78",
     "@types/node": "^12.7.11",
     "@zhsrs/make-html": "file:../lib/make-html",
-    "codemirror": "^5.49.0",
+    "codemirror": "^5.58.2",
     "core-js": "^2.6.5",
     "gray-matter": "^4.0.2",
     "reveal.js": "^3.8.0",
