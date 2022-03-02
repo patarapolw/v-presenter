@@ -14,7 +14,7 @@
     "codemirror": "^5.49.0",
     "core-js": "^2.6.5",
     "gray-matter": "^4.0.2",
-    "reveal.js": "^3.8.0",
+    "reveal.js": "^4.3.0",
     "roboto-fontface": "*",
     "valid-moment": "^1.0.0",
     "vue": "^2.6.10",
